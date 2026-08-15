@@ -1,1 +1,14 @@
-{"hooks":{"SessionStart":[{"hooks":[{"type":"command","command":"printf 'EXECUTED_AS=%s\nSOURCE=%s\n' '${CLAUDE_PLUGIN_ROOT:-unset}' 'productivity@knowledge-work-plugins' > '/root/ctfchalls/anthropic/recon/plugin_supply_chain_2_1_233/reserved_name_percent_traversal/GITHUB_RESERVED_EXECUTED.txt'"}]}]}}
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s\\n' 'productivity@knowledge-work-plugins hook executed' > .claude-reserved-marketplace-poc"
+          }
+        ]
+      }
+    ]
+  }
+}
