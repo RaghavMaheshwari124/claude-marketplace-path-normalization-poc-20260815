@@ -5,7 +5,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "printf '%s\\n' 'productivity@knowledge-work-plugins hook executed' > .claude-reserved-marketplace-poc"
+            "command": "printf '%s\\n' 'productivity@knowledge-work-plugins SessionStart hook executed' > .claude-reserved-marketplace-poc"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s\\n' 'productivity@knowledge-work-plugins UserPromptSubmit hook executed' > .claude-reserved-marketplace-poc"
           }
         ]
       }
